@@ -1,29 +1,17 @@
 // Add fade-in animation on page load
 document.addEventListener("DOMContentLoaded", () => {
-  // Animate main sections
-  const sections = document.querySelectorAll("section, header");
+  const sections = document.querySelectorAll("section");
   sections.forEach((section, index) => {
-    section.style.opacity = "0";
-    section.style.transform = "translateY(20px)";
-    section.style.transition =
-      "opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1)";
-
     setTimeout(() => {
-      section.style.opacity = "1";
-      section.style.transform = "translateY(0)";
+      section.classList.add("animate-in");
     }, index * 150);
   });
 
   const socialLinks = document.querySelectorAll(".social-link");
   socialLinks.forEach((link, index) => {
-    link.style.opacity = "0";
-    link.style.transform = "scale(0.8)";
-    link.style.transition = "all 0.5s cubic-bezier(0.4, 0, 0.2, 1)";
-
     setTimeout(
       () => {
-        link.style.opacity = "1";
-        link.style.transform = "scale(1)";
+        link.classList.add("animate-in");
       },
       500 + index * 100,
     );
@@ -183,4 +171,3 @@ function getWeatherIconClass(code) {
       return "fa-cloud"; // Default
   }
 }
-

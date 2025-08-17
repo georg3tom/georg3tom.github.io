@@ -27,6 +27,8 @@
 
   /* Additional theme variables */
   --transition-speed: 0.3s;
+  --animation-duration: 0.8s;
+  --animation-easing: cubic-bezier(0.4, 0, 0.2, 1);
   --size: 60px;
   --line: color-mix(in hsl, var(--bg-tertiary), transparent 60%);
 }
@@ -82,6 +84,24 @@ body {
     var(--bg-tertiary)
   );
   min-height: 100vh;
+}
+
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity var(--animation-duration) var(--animation-easing),
+    transform var(--animation-duration) var(--animation-easing);
+}
+
+.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.social-link.animate-in {
+  opacity: 1;
+  transform: scale(1);
 }
 
 body::before {
@@ -176,8 +196,15 @@ a {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  transition: all var(--transition-speed) ease;
   font-weight: normal;
+
+  /* Initial animation state */
+  opacity: 0;
+  transform: scale(0.8);
+  transition:
+    color var(--transition-speed) ease,
+    opacity 0.5s var(--animation-easing),
+    transform 0.5s var(--animation-easing);
 }
 
 .social-link:hover {
@@ -306,4 +333,3 @@ a {
     gap: 1rem;
   }
 }
-

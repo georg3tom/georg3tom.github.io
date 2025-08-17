@@ -147,7 +147,7 @@ header {
 .subtitle {
   font-family: var(--font-mono);
   color: var(--text-muted);
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   font-size: 1rem;
   font-weight: 200;
   font-style: normal;

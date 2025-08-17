@@ -1,4 +1,3 @@
-// Add fade-in animation on page load
 document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll("section");
   sections.forEach((section, index) => {
@@ -36,10 +35,9 @@ function updateTime() {
   }
 
   setTime();
-  setInterval(setTime, 1000);
+  setInterval(setTime, 30000);
 }
 
-// Get weather data
 async function getWeather() {
   const weatherIcon = document.querySelector(".weather-container i");
   const weatherText = document.querySelector(".weather-text");
@@ -170,4 +168,15 @@ function getWeatherIconClass(code) {
     default:
       return "fa-cloud"; // Default
   }
+}
+
+async function copyEmail() {
+  const el = document.querySelector(".email-text");
+  const email = el.textContent;
+  
+  try {
+    await navigator.clipboard.writeText(email);
+    el.textContent = "copied to clipboard";
+    setTimeout(() => el.textContent = email, 2000);
+  } catch {}
 }

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/static/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/static/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/static/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="George Tom" />
+    <link rel="manifest" href="/static/favicon/site.webmanifest" />
+    <title>George Tom</title>
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://georg3tom.github.io/" />
+    <meta property="og:title" content="George Tom" />
+
+    <meta
+      name="theme-color"
+      content="#26233a"
+      media="(prefers-color-scheme: dark)"
+    />
+    <meta name="theme-color" content="#f2e9e1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="static/styles.css" as="style" />
+    <link
+      rel="preload"
+      href="assets/fonts/Gyahegi.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="title">George Tom</h1>
+        <p class="subtitle">ML Scientist at Wadhwani AI</p>
+        <section class="social-links">
+          <div class="links">
+            <a
+              href="https://github.com/georg3tom"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a
+              href="https://x.com/georg3tom"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-twitter"></i>
+              <span>Twitter</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/georg3tom/"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a
+              href="https://scholar.google.com/citations?user=9xckHR0AAAAJ"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fas fa-graduation-cap"></i>
+              <span>Google Scholar</span>
+            </a>
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <section class="bio">
+          <p>
+            👋 Hola! I'm an associate machine learning scientist at
+            <a
+              href="https://wadhwaniai.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Wadhwani AI</a
+            >. Before this, I completed my integrated Masters programme in
+            Computer Science and Engineering from
+            <a
+              href="https://www.iiit.ac.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >IIIT Hyderabad</a
+            >, with guidance from both
+            <a
+              href="https://faculty.iiit.ac.in/~jawahar/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >C.V. Jawahar</a
+            >
+            and
+            <a
+              href="https://pages.cvc.uab.es/dimos/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Dimosthenis Karatzas</a
+            >. At IIIT, I worked in the vision-language domain, and my thesis
+            was on applying multimodal learning to improve driver assistance
+            systems.
+          </p>
+          <img
+            src="static/images/george.jpg"
+            alt="George Tom"
+            class="sr-only"
+            loading="lazy"
+          />
+        </section>
+
+        <section class="email-section">
+          <a href="mailto:georg3tom@gmail.com" class="email-container">
+            <i class="fas fa-envelope"></i>
+            <span class="email-text">georg3tom@gmail.com</span>
+          </a>
+        </section>
+
+        <section class="info-widgets">
+          <div class="time-container">
+            <i class="fas fa-clock"></i>
+            <span class="time-text">00:00</span>
+          </div>
+          <div class="weather-container">
+            <i class="fas fa-cloud-sun"></i>
+            <span class="weather-text">Loading weather...</span>
+            <span class="weather-temp"></span>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="static/script.js" defer></script>
+  </body>
+</html>

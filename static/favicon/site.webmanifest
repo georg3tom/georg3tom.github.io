@@ -1,0 +1,21 @@
+{
+  "name": "George Tom",
+  "short_name": "George Tom",
+  "icons": [
+    {
+      "src": "/static/favicon/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/static/favicon/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#f2e9e1",
+  "background_color": "#faf4ed",
+  "display": "standalone"
+}
